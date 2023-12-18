@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/NPG/StyleSheets/HomePageStyle.css" type="text/css" media="screen" />
+    <script src="http://localhost/NPG/Scripts/FeedbackScript.js"></script>
+    <title>NPG</title>
+</head>
+
+<body>
+    <div>
+        <div class="row page-header-row">
+            <div class="col-sm-2">
+                <!-- Content for column 1 -->
+                <button title="Click here to navigate to Welcome Page.">
+                    <a href="./WelcomePage.html"><img src="http://localhost/NPG/Images/PageLogoImage.png" width="60px" height="50px"></a>
+                </button>
+            </div>
+            <div class="col-sm-8 text-center page-header">
+                <!-- Content for column 2 -->
+                <b>
+                    <a title="NPG" class="hd" href="./HomePage.html">NETWORK PACKET GENERATOR</a>
+                </b>
+            </div>
+            <div class="col-sm-2 text-right">
+                <!-- Content for column 3 -->
+                <button title="Click here to navigate to Website Information Page.">
+                    <a href="./InfoPage.html"><img src="http://localhost/NPG/Images/PageInfoImage.png" width="60px"
+                            height="50px"></button></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <marquee class="header-scroll" direction="right" background="#FFFFCC">One stop tool to generate network packects
+            using ARP, IP, DNS.</marquee>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <form name="feedback-form" onsubmit="return feedbackSubmitted()" action="http://localhost/NPG/Server/feedbackSubmission.py" method="POST">
+                    <label name="feedback-person-id">User</label><br />
+                    <input type="text" placeholder="please enter your name/email" name="feedback-person-id"
+                        size="40"><br /><br />
+                    <div class="form-floating">
+                        <label for="floatingTextarea">Comments</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                            name="comments"></textarea>
+                        <br />
+                        <button type="submit" class="feedback-submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <button class="contact-btn">
+            <a class="pg" href="./ContactInfoPage.html">
+                <img src="http://localhost/NPG/Images/contactInfoImage.png" width="20px" height="20px" />Contact
+            </a>
+        </button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (optional, but required for some Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
