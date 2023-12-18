@@ -1,0 +1,7 @@
+- hide the others option
+- hide the destination MAC
+- ttl, ipoption_rr, ipoption_ts
+- ip packet generation issue
+- validation on server side
+- try for failed cases of packet generation
+- 
